@@ -1,40 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 
 <head>
-<title>Política de Privacidade do Aplicativo de Sorteio de Números</title>
+    <title>Política de Privacidade do Aplicativo de Sorteio de Números</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- flag-icon-css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
 </head>
 
 <body>
-<h1>Política de Privacidade do Aplicativo de Sorteio de Números Offline</h1>
+    <div class="container mt-5">
+        <!-- Idioma: Português -->
+        <button class="btn btn-primary" onclick="changeLanguage('pt')">
+            <span class="flag-icon flag-icon-br"></span> Português
+        </button>
+        <!-- Idioma: Inglês -->
+        <button class="btn btn-primary" onclick="changeLanguage('en')">
+            <span class="flag-icon flag-icon-us"></span> English
+        </button>
+        <!-- Idioma: Espanhol -->
+        <button class="btn btn-primary" onclick="changeLanguage('es')">
+            <span class="flag-icon flag-icon-es"></span> Español
+        </button>
 
-<p>A privacidade dos usuários é de extrema importância para nós. Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e protegemos as informações pessoais dos usuários ao utilizar nosso aplicativo de sorteio de números offline.</p>
+        <h1 id="policy-title">Política de Privacidade do Aplicativo de Sorteio de Números Offline</h1>
 
-<h2>Coleta de Informações</h2>
+        <h2 id="info-collection">Coleta de Informações</h2>
+        <p id="info-collection-text">Nosso aplicativo de sorteio de números offline não coleta nenhuma informação pessoal dos usuários. Não solicitamos nomes, e-mails, números de telefone ou qualquer outra informação pessoal identificável.</p>
 
-<p>Nosso aplicativo de sorteio de números offline não coleta nenhuma informação pessoal dos usuários. Não solicitamos nomes, e-mails, números de telefone ou qualquer outra informação pessoal identificável.</p>
+        <h2 id="info-usage">Uso de Informações</h2>
+        <p id="info-usage-text">Como não coletamos informações pessoais dos usuários, não utilizamos essas informações para qualquer finalidade.</p>
 
-<h2>Uso de Informações</h2>
+        <h2 id="info-storage">Armazenamento de Informações</h2>
+        <p id="info-storage-text">Nosso aplicativo de sorteio de números offline não armazena nenhuma informação pessoal dos usuários. Todos os dados utilizados durante o sorteio são temporários e são excluídos após o encerramento do aplicativo.</p>
 
-<p>Como não coletamos informações pessoais dos usuários, não utilizamos essas informações para qualquer finalidade.</p>
+        <h2 id="info-protection">Proteção de Informações</h2>
+        <p id="info-protection-text">Não coletemos informações pessoais dos usuários.</p>
 
-<h2>Armazenamento de Informações</h2>
+        <h2 id="policy-changes">Alterações na Política de Privacidade</h2>
+        <p id="policy-changes-text">Podemos atualizar esta Política de Privacidade ocasionalmente. Recomendamos que os usuários revisem periodicamente esta página para se manterem informados sobre quaisquer alterações. O uso contínuo do aplicativo após quaisquer modificações desta Política de Privacidade será considerado como aceitação das mesmas.</p>
 
-<p>Nosso aplicativo de sorteio de números offline não armazena nenhuma informação pessoal dos usuários. Todos os dados utilizados durante o sorteio são temporários e são excluídos após o encerramento do aplicativo.</p>
+        <h2 id="contact">Contato</h2>
+        <p id="contact-text">Se os usuários tiverem alguma dúvida ou preocupação em relação a esta Política de Privacidade, podem entrar em contato conosco através dos canais de suporte fornecidos no aplicativo.</p>
+    </div>
 
-<h2>Proteção de Informações</h2>
+    <!-- Bootstrap JS (opcional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-<p>Não coletemos informações pessoais dos usuários</p>
-
-<h2>Alterações na Política de Privacidade</h2>
-
-<p>Podemos atualizar esta Política de Privacidade ocasionalmente. Recomendamos que os usuários revisem periodicamente esta página para se manterem informados sobre quaisquer alterações. O uso contínuo do aplicativo após quaisquer modificações desta Política de Privacidade será considerado como aceitação das mesmas.</p>
-
-<h2>Contato</h2>
-
-<p>Se os usuários tiverem alguma dúvida ou preocupação em relação a esta Política de Privacidade, podem entrar em contato conosco através dos canais de suporte fornecidos no aplicativo.</p>
-
-
+    <script>
+        // Função para alterar o idioma
+        function changeLanguage(language) {
+            // Estruturas de controle para definir o conteúdo em diferentes idiomas
+            if (language === 'pt') {
+                document.getElementById('policy-title').textContent = 'Política de Privacidade do Aplicativo de Sorteio de Números Offline';
+                document.getElementById('info-collection').textContent = 'Coleta de Informações';
+                document.getElementById('info-collection-text').textContent = 'Nosso aplicativo de sorteio de números offline não coleta nenhuma informação pessoal dos usuários. Não solicitamos nomes, e-mails, números de telefone ou qualquer outra informação pessoal identificável.';
+                document.getElementById('info-usage').textContent = 'Uso de Informações';
+                document.getElementById('info-usage-text').textContent = 'Como não coletamos informações pessoais dos usuários, não utilizamos essas informações para qualquer finalidade.';
+                document.getElementById('info-storage').textContent = 'Armazenamento de Informações';
+                document.getElementById('info-storage-text').textContent = 'Nosso aplicativo de sorteio de números offline não armazena nenhuma informação pessoal dos usuários. Todos os dados utilizados durante o sorteio são temporários e são excluídos após o encerramento do aplicativo.';
+                document.getElementById('info-protection').textContent = 'Proteção de Informações';
+                document.getElementById('info-protection-text').textContent = 'Não coletemos informações pessoais dos usuários.';
+                document.getElementById('policy-changes').textContent = 'Alterações na Política de Privacidade';
+                document.getElementById('policy-changes-text').textContent = 'Podemos atualizar esta Política de Privacidade ocasionalmente. Recomendamos que os usuários revisem periodicamente esta página para se manterem informados sobre quaisquer alterações. O uso contínuo do aplicativo após quaisquer modificações desta Política de Privacidade será considerado como aceitação das mesmas.';
+                document.getElementById('contact').textContent = 'Contato';
+                document.getElementById('contact-text').textContent = 'Se os usuários tiverem alguma dúvida ou preocupação em relação a esta Política de Privacidade, podem entrar em contato conosco através dos canais de suporte fornecidos no aplicativo.';
+            } else if (language === 'en') {
+                document.getElementById('policy-title').textContent = 'Privacy Policy of the Offline Number Drawing Application';
+                document.getElementById('info-collection').textContent = 'Information Collection';
+                document.getElementById('info-collection-text').textContent = 'Our offline number drawing application does not collect any personal information from users. We do not request names, emails, phone numbers, or any other personally identifiable information.';
+                document.getElementById('info-usage').textContent = 'Information Usage';
+                document.getElementById('info-usage-text').textContent = 'Since we do not collect personal information from users, we do not use this information for any purpose.';
+                document.getElementById('info-storage').textContent = 'Information Storage';
+                document.getElementById('info-storage-text').textContent = 'Our offline number drawing application does not store any personal information from users. All data used during the draw is temporary and is deleted after the application is closed.';
+                document.getElementById('info-protection').textContent = 'Information Protection';
+                document.getElementById('info-protection-text').textContent = 'We do not collect personal information from users.';
+                document.getElementById('policy-changes').textContent = 'Changes to the Privacy Policy';
+                document.getElementById('policy-changes-text').textContent = 'We may update this Privacy Policy occasionally. We recommend that users periodically review this page to stay informed about any changes. The continued use of the application after any modifications to this Privacy Policy will be considered acceptance of those changes.';
+                document.getElementById('contact').textContent = 'Contact';
+                document.getElementById('contact-text').textContent = 'If users have any questions or concerns regarding this Privacy Policy, they can contact us through the support channels provided in the application.';
+            } else if (language === 'es') {
+                document.getElementById('policy-title').textContent = 'Política de Privacidad de la Aplicación de Sorteo de Números sin Conexión';
+                document.getElementById('info-collection').textContent = 'Recopilación de Información';
+                document.getElementById('info-collection-text').textContent = 'Nuestra aplicación de sorteo de números sin conexión no recopila información personal de los usuarios. No solicitamos nombres, correos electrónicos, números de teléfono ni ninguna otra información personal identificable.';
+                document.getElementById('info-usage').textContent = 'Uso de la Información';
+                document.getElementById('info-usage-text').textContent = 'Como no recopilamos información personal de los usuarios, no utilizamos esta información para ningún propósito.';
+                document.getElementById('info-storage').textContent = 'Almacenamiento de Información';
+                document.getElementById('info-storage-text').textContent = 'Nuestra aplicación de sorteo de números sin conexión no almacena información personal de los usuarios. Todos los datos utilizados durante el sorteo son temporales y se eliminan después de cerrar la aplicación.';
+                document.getElementById('info-protection').textContent = 'Protección de la Información';
+                document.getElementById('info-protection-text').textContent = 'No recopilamos información personal de los usuarios.';
+                document.getElementById('policy-changes').textContent = 'Cambios en la Política de Privacidad';
+                document.getElementById('policy-changes-text').textContent = 'Podemos actualizar esta Política de Privacidad ocasionalmente. Recomendamos que los usuarios revisen periódicamente esta página para mantenerse informados sobre cualquier cambio. El uso continuado de la aplicación después de cualquier modificación de esta Política de Privacidad se considerará como aceptación de dichos cambios.';
+                document.getElementById('contact').textContent = 'Contacto';
+                document.getElementById('contact-text').textContent = 'Si los usuarios tienen alguna pregunta o inquietud con respecto a esta Política de Privacidad, pueden ponerse en contacto con nosotros a través de los canales de soporte proporcionados en la aplicación.';
+            }
+        }
+    </script>
 </body>
 
 </html>
